@@ -1,0 +1,23 @@
+you have a text file like this
+
+
+#! /bin/sh
+#rm ./directory_a/file_a
+#rm ./directory_b/file_identical_to_a
+
+#rm ./directory_a/file_b
+#rm ./directory_b/file_identical_to_b
+#rm ./directory_c/another_file_identical_to_b
+
+#rm ./directory_a/file_c
+#rm ./directory_b/file_identical_to_c
+#rm ./directory_c/another_file_identical_to_c
+#rm ./directory_d/yet_another_file_identical_to_c
+
+---------------------------------------------------
+
+Write a program to delete # from the first line of each paragraph...
+
+
+------------------------------------------------------------------------
+https://stackoverflow.com/questions/54381830/sed-replace-a-string-in-the-first-line-of-a-paragraph

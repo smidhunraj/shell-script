@@ -1,0 +1,4 @@
+Write a program to increase the last number in a string by 1 .Eg 
+/foo/bar/baz59_ 5stuff.thing should be increased to /foo/bar/baz59_ 6stuff.thingstuff.thing can be any thing.
+
+https://stackoverflow.com/questions/54367360/how-to-increment-the-last-number-in-a-string-bash

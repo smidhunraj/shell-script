@@ -1,0 +1,76 @@
+1)You have a mark up code
+<wtc-import>
+      <name>WTCImportedService-0-rap01</name>
+      <resource-name>XXXX01F</resource-name>
+      <local-access-point>lap01</local-access-point>
+      <remote-access-point-list>rap01</remote-access-point-list>
+      <remote-name>XXXX01F</remote-name>
+    </wtc-import>
+
+
+Insert at the end of each </wtc-server> tag in multiple locations.........
+ <wtc-server>
+    <name>WTC-server-117-02</name>
+    <target>cwea_117_02</target>
+    <wtc-local-tux-dom>
+      <name>lap01</name>
+      <access-point>lap01</access-point>
+      <access-point-id>wl.prodcwe117.02</access-point-id>
+      <block-time>600</block-time>
+      <nw-addr>//localhost:7125</nw-addr>
+    </wtc-local-tux-dom>
+    <wtc-remote-tux-dom>
+      <name>rap01</name>
+      <access-point>rap01</access-point>
+      <access-point-id>tx.hello101</access-point-id>
+      <local-access-point>lap01</local-access-point>
+      <nw-addr>//hostanme:71105</nw-addr>
+      <federation-url></federation-url>
+      <federation-name></federation-name>
+    </wtc-remote-tux-dom>
+    <wtc-import>
+      <name>WTCImportedService-0-rap01</name>
+      <resource-name>XXXX01F</resource-name>
+      <local-access-point>lap01</local-access-point>
+      <remote-access-point-list>rap01</remote-access-point-list>
+      <remote-name>XXXX01F</remote-name>
+    </wtc-import>
+--------------------------------
+Insert here
+--------------------------
+ </wtc-server>
+
+  <wtc-server>
+    <name>WTC-server-117-03</name>
+    <target>cwea_117_03</target>
+    <wtc-local-tux-dom>
+      <name>lap01</name>
+      <access-point>lap01</access-point>
+      <access-point-id>wl.prodcwe117.02</access-point-id>
+      <block-time>600</block-time>
+      <nw-addr>//localhost:7125</nw-addr>
+    </wtc-local-tux-dom>
+    <wtc-remote-tux-dom>
+      <name>rap01</name>
+      <access-point>rap01</access-point>
+      <access-point-id>tx.hello101</access-point-id>
+      <local-access-point>lap01</local-access-point>
+      <nw-addr>//hostanme:71105</nw-addr>
+      <federation-url></federation-url>
+      <federation-name></federation-name>
+    </wtc-remote-tux-dom>
+    <wtc-import>
+      <name>WTCImportedService-0-rap01</name>
+      <resource-name>XXXX01F</resource-name>
+      <local-access-point>lap01</local-access-point>
+      <remote-access-point-list>rap01</remote-access-point-list>
+      <remote-name>XXXX01F</remote-name>
+    </wtc-import>
+--------------------------------
+Insert  here
+--------------------------------
+ </wtc-server>
+
+https://stackoverflow.com/questions/54374560/adding-a-xml-element-using-shell-or-python
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,17 @@
+
+How do I add characters between strings in bash?
+
+
+Tell me how to add it using the sed command.
+
+[Before revision]
+
+BONDING_OPTS="mode=1 miimon=200 primary=ens192" 
+[After revision]
+
+BONDING_OPTS="mode=1 miimon=200 primary=ens192 primary=eth0"
+I have succeeded so far.
+
+
+-----------------------------------------------------
+https://stackoverflow.com/questions/54360342/how-do-i-add-characters-between-strings-in-bash

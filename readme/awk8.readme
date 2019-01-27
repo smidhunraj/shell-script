@@ -1,0 +1,15 @@
+Write a program to add column 2 in a particular way and print output in 3rd column for example
+
+file 1
+----------
+1 4
+2 5
+3 6
+
+file 2
+-----------
+1 4 4
+3 5 9
+3 6 15
+
+https://stackoverflow.com/questions/54358581/how-do-i-sum-of-the-first-n-rows-of-another-column-in-bash

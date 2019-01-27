@@ -1,0 +1,46 @@
+I have two files with two columns separated by space
+
+-------------------------------------------------------------------------
+
+
+
+cat file1.txt
+281475225437349 33,32,21,17,20,22,18,30,19,16,23,31
+281475550885480 35,32,33,21,39,40,57,36,41,17,20,38,34,37,16,99
+
+cat file2.txt
+281475550885480 16,17,20,21,32,33,34,35,36,37,38,39,40,41
+281475225437349 16,17,18,19,20,21,22,23,24,25,30,31,32,33
+
+
+---------------------------------------------------------------------------
+
+
+
+
+I have two files with two columns separated by space
+
+cat file1.txt
+281475225437349 33,32,21,17,20,22,18,30,19,16,23,31
+281475550885480 35,32,33,21,39,40,57,36,41,17,20,38,34,37,16,99
+
+cat file2.txt
+281475550885480 16,17,20,21,32,33,34,35,36,37,38,39,40,41
+281475225437349 16,17,18,19,20,21,22,23,24,25,30,31,32,33
+i want to compare values from file1 column2 with file2 column2 for same value in column1. and print only those values which does exist in file1 column2 but not in file2 column2 along and not vice versa along with respective value in column1
+
+Desired o/p
+
+it should not print anything for 281475225437349 as all values from file1 column2 present in file2 column 2 for 281475225437349
+
+it should only print values for 281475550885480 which present in file1 column2 but not present in file2 column2 . Like values 57 and 99 for 281475550885480
+
+So o/p file like:
+
+cat output.txt
+281475550885480 57,99
+I have tried sorting the file and the comparing using sdiff but it give difference and its taking time
+
+
+-------------------------------------------------------------------------
+https://stackoverflow.com/questions/54364389/how-to-compare-values-between-two-files

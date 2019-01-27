@@ -1,0 +1,64 @@
+Grabbing all matches in between two columns
+
+I have two files that I want to compare their 1st columns and append the 2nd column of file2.txt to the end of file1.txt only if there is a match:
+
+------------------------------------------------------------
+
+
+
+file1.txt
+NC_000008.10    1264       5646      G_synym=E4566
+NC_000008.10    1264       5646      G=AGO2
+NC_000008.10    5584       5646      G=AGO2
+NC_000008.10    5218       5410      G=AGO2
+NC_000008.10    2911       3031      G=AGO2
+NC_000008.10    2552       2733      G=AGO2
+NC_000008.10    0473       0609      G=AGO2
+NC_000008.10    9494       9628      G=AGO2
+NC_000008.10    8584       8671      G=AGO2
+NC_000008.10    7188       7335      G=AGO2
+
+
+file2.txt
+NC_000001.10    chr1
+NC_000002.11    chr2
+NC_000003.11    chr3
+NC_000004.11    chr4
+NC_000005.9     chr5
+NC_000006.11    chr6
+NC_000007.13    chr7
+NC_000008.10    chr8
+NC_000009.11    chr9
+NC_000010.10    chr1 
+
+
+
+----------------------------------------------
+
+
+
+But the expected output would be :
+
+NC_000008.10    1264       5646      G_synym=E4566  chr8
+NC_000008.10    1264       5646      G=AGO2  chr8
+NC_000008.10    5584       5646      G=AGO2  chr8
+NC_000008.10    5218       5410      G=AGO2  chr8
+NC_000008.10    2911       3031      G=AGO2  chr8
+NC_000008.10    2552       2733      G=AGO2  chr8
+NC_000008.10    0473       0609      G=AGO2  chr8
+NC_000008.10    9494       9628      G=AGO2  chr8
+NC_000008.10    8584       8671      G=AGO2  chr8
+NC_000008.10    7188       7335      G=AGO2  chr8
+
+
+
+https://stackoverflow.com/questions/54351562/grabbing-all-matches-in-between-two-columns
+
+
+
+
+
+
+
+
+

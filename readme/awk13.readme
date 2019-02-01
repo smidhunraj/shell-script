@@ -1,0 +1,33 @@
+Sort text file by groups of 2 lines
+
+----------------------------------------
+
+
+
+I have a file with the following structure:
+
+A   35  74  dsadasd/1   0   +
+A   95  74  dsadasd/2   0   -
+B   75  159 dsadasd/2   0   +
+B   78  852 dsadasd/1   0   -
+C   12  789 dsadasd/1   0   +
+C   91  546 dsadasd/2   0   -
+A   87  52  dsadasd/2   0   +
+A   52  15  dsadasd/1   0   - 
+I would like to sort it by the 4th field (which is basically sorting by the last number) in groups of two lines by two lines to output the following result:
+
+A   35  74  dsadasd/1   0   +
+A   95  74  dsadasd/2   0   -
+B   78  852 dsadasd/1   0   -
+B   75  159 dsadasd/2   0   +
+C   12  789 dsadasd/1   0   +
+C   91  546 dsadasd/2   0   -
+A   52  15  dsadasd/1   0   - 
+A   87  52  dsadasd/2   0   +
+TIA
+
+--------------------------------------------------------
+
+
+
+https://stackoverflow.com/questions/54464761/sort-text-file-by-groups-of-2-lines

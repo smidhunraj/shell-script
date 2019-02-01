@@ -1,0 +1,51 @@
+extracting specific words (not keywords) from a log file
+I am trying to extract a few words (as shown in expected output) from the following sample.txt and put them in a list. I am facing difficulty in extracting the correct fields. I have tried with my approach but it doesn't work for most cases. I prefer to do this using python, but open to other languages. Any pointers to other approaches is much appreciated.
+
+------------------------------------------------------------------------------
+
+sample.log
+
+//*********************************************************************************
+// update section
+//*********************************************************************************
+      for (i=0; i< models; i = i+1) begin:modelgen
+
+     model_ip model_inst
+         (
+          .model_powerdown(model_powerdown),
+          .mcg(model_powerdown),
+          .lambda(_lambda[i])
+          );
+      assign fnl_verifier_lock = (tx_ready & rx_ready) ? &verifier_lock :1'b0;
+
+   native_my_ip native_my_inst
+     (
+      .tx_analogreset(tx_analogreset),     
+     //.unused_tx_parallel_data({1536{1'b0}})
+
+      );
+
+   // END Section I : 
+   //*********************************************************************************
+   resync 
+     #(
+       .INIT_VALUE (1)
+       ) inst_reset_sync 
+       (
+    .clk    (tx_coreclkin),
+    .reset  (!tx_ready), // tx_digitalreset from reset 
+    .d      (1'b0),
+    .q      (srst_tx_common  )
+    );
+
+--------------------------------------------------------------------------------
+
+expected output
+
+model_ip
+native_my_ip
+resync
+------------------------------------------------------------------------------
+
+
+https://stackoverflow.com/questions/54471145/extracting-specific-words-not-keywords-from-a-log-file

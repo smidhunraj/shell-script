@@ -1,0 +1,34 @@
+Combining multiple lines into a single based on column values [duplicate]
+
+-----------------------------------------------------------------------------
+
+
+
+Merge values for same key
+
+
+
+------------------------------------------------------------------------------
+
+
+
+
+
+I have a file with below records.
+
+$File.txt
+APPLE,A,10
+APPLE,A,20
+APPLE,A,30
+GRAPE,B,12
+GRAPE,B,13
+I want the output to be as given below:
+
+  APPLE,A,10|20|30,
+  GRAPE,B,12|13,
+I have tried the below method and got the required output. But looking for something simpler.
+--------------------------------------------------------------------------------
+
+
+
+https://stackoverflow.com/questions/54460983/combining-multiple-lines-into-a-single-based-on-column-values

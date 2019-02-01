@@ -1,0 +1,13 @@
+extract tail of a line
+-------------------------------
+
+
+
+Given a log ,we need to find every line of the form Time taken to process  Request54; and then extract the numeric after 'Request'.
+In the above case ,the desired value is 54.
+How do we achieve this with a single line shell script.
+
+
+
+
+https://stackoverflow.com/questions/54455997/extract-tail-of-a-line

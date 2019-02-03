@@ -1,1 +1,6 @@
 grep -E "^Me|you$" us.txt
+
+
+
+
+The "-E" parameter in the example above indicates the pattern is an "extended regular expression." By using this option, you can make sure grep processes your search pattern as a regular expression instead of a basic string. Grep also supports several other command-line options, which can be used to create more specific queries and customize the output. You can view these options and learn more about grep by typing "man grep at the Unix command prompt.

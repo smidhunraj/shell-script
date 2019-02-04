@@ -1,0 +1,22 @@
+grep regex operator	Meaning	Example
+.	Matches any single character.	grep '.' file
+grep 'foo.' input
+?	The preceding item is optional and will be matched, at most, once.	grep 'vivek?' /etc/passwd
+*	The preceding item will be matched zero or more times.	grep 'vivek*' /etc/passwd
++	The preceding item will be matched one or more times.	ls /var/log/ | grep -E "^[a-z]+\.log."
+{N}	The preceding item is matched exactly N times.	egrep '[0-9]{2} input
+{N,}	The preceding item is matched N or more times.	egrep '[0-9]{2,} input
+{N,M}	The preceding item is matched at least N times, but not more than M times.	egrep '[0-9]{2,4} input
+–	Represents the range if it’s not first or last in a list or the ending point of a range in a list.	grep ':/bin/[a-z]*' /etc/passwd
+^	Matches the empty string at the beginning of a line; also represents the characters not in the range of a list.	grep '^vivek' /etc/passwd
+grep '[^0-9]*' /etc/passwd
+$	Matches the empty string at the end of a line.	grep '^$' /etc/passwd
+\b	Matches the empty string at the edge of a word.	vivek '\bvivek' /etc/passwd
+\B	Matches the empty string provided it’s not at the edge of a word.	grep '\B/bin/bash /etc/passwd
+\<	Match the empty string at the beginning of word.	grep '\
+\>	Match the empty string at the end of word.	grep 'bash\>' /etc/passwd
+grep '\' /etc/passwd
+
+
+
+https://www.cyberciti.biz/faq/grep-regular-expressions/

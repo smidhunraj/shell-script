@@ -1,0 +1,1 @@
+grep ^abc k | grep -v "xyz$" 

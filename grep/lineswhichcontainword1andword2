@@ -1,0 +1,1 @@
+grep 'word1' filename | grep 'word2'

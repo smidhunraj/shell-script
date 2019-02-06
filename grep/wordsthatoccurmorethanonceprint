@@ -1,1 +1,3 @@
-grep -E '(\b[a-z]+\b).*\b\1\b' file.txt 
+grep -E '(\b[a-z]+\b).*\b\1\b' file.txt
+
+sed -n '/\s\([a-z]*\)\s.*\1/p' infile 

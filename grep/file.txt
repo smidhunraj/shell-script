@@ -1,9 +1,1 @@
-ostechnix
-Ostechnix
-o$technix
-linux
-linus
-unix
-technology
-hello world
-HELLO world
+ostechnix Ostechnix o$technix linux linus unix technology hello hello world HELLO world unix linux

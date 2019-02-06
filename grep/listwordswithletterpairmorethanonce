@@ -1,0 +1,2 @@
+grep '\(..\)[[:alnum:]]*\1' input
+grep '\(..\)\w*\1' input

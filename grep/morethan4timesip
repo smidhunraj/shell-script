@@ -1,0 +1,5 @@
+sort iplist.txt | uniq -c | gawk '$1>=4{print $2}' 
+
+Exactly 4 times
+
+sort iplist.txt | uniq -c | gawk '$1==4{print $2}' 

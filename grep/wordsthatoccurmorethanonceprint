@@ -1,0 +1,1 @@
+grep -E '(\b[a-z]+\b).*\b\1\b' file.txt 

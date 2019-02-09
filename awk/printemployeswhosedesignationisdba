@@ -1,0 +1,1 @@
+awk -F "|" '/DBA/ {print} ' empno

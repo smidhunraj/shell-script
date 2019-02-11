@@ -1,0 +1,1 @@
+  awk -F "|" '$3~"^dba$" {print}' empdba
